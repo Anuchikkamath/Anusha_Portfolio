@@ -1,5 +1,6 @@
 import { Github, Linkedin, Mail } from "lucide-react";
 import { profile } from "../data/profile.js";
+import myImage from "../resume/my_image.png";
 
 export default function Hero() {
   return (
@@ -13,6 +14,16 @@ export default function Hero() {
           <p className="mt-5 max-w-2xl text-xl font-semibold text-ocean sm:text-2xl">
             {profile.role}
           </p>
+          <div className="mt-5 flex flex-wrap gap-2">
+            {profile.highlights.map((highlight) => (
+              <span
+                key={highlight}
+                className="rounded-full border border-ocean/15 bg-white px-3.5 py-1.5 text-sm font-semibold text-ink/75 shadow-sm"
+              >
+                {highlight}
+              </span>
+            ))}
+          </div>
           <p className="mt-6 max-w-2xl text-lg leading-8 text-ink/75">
             I build AI-powered applications using LLMs, RAG, LangChain,
             FastAPI, Python, SQL, and modern data/AI tools.
@@ -72,9 +83,9 @@ export default function Hero() {
         <div className="relative">
           <div className="absolute -inset-4 rounded-[2rem] bg-emerald-200/30 blur-2xl" />
           <img
-            src="/assets/hero-ai-workspace.png"
-            alt="Abstract AI engineering workspace"
-            className="relative aspect-[4/3] w-full rounded-2xl object-cover shadow-soft"
+            src={myImage}
+            alt="Anusha Chikkamath"
+            className="relative mx-auto aspect-[4/5] w-full max-w-xs rounded-2xl object-cover object-top shadow-soft sm:max-w-sm lg:ml-auto"
           />
         </div>
       </div>

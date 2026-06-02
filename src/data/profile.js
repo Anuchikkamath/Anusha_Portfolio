@@ -2,7 +2,12 @@ import resumePdf from "../resume/Anusha_Chikkamath_AI_Engineer_resume.pdf";
 
 export const profile = {
   name: "Anusha Chikkamath",
-  role: "AI/ML Engineer | GenAI Developer | RAG & Automation Engineer",
+  role: "AI Engineer building LLM-powered applications, RAG systems, and intelligent automation workflows.",
+  highlights: [
+    "7 Months Industry Experience",
+    "Immediate Joiner",
+    "Open to Opportunities",
+  ],
   location: "Hyderabad, India",
   email: "anushachikkamath396@gmail.com",
   // TODO: Update mobile number.

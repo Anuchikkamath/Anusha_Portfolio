@@ -6,6 +6,7 @@ import Hero from "./components/Hero.jsx";
 import Navbar from "./components/Navbar.jsx";
 import Projects from "./components/Projects.jsx";
 import Skills from "./components/Skills.jsx";
+import Stats from "./components/Stats.jsx";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
       <main>
         <Hero />
         <About />
+        <Stats />
         <Skills />
         <Experience />
         <Projects />

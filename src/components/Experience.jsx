@@ -3,7 +3,7 @@ export default function Experience() {
     <section id="experience" className="bg-white">
       <div className="section-shell">
         <p className="section-kicker">Experience</p>
-        <h2 className="section-title">Recent work</h2>
+        <h2 className="section-title">Professional Experience</h2>
 
         <article className="card mt-10 p-6 sm:p-8">
           <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">

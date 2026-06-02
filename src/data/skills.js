@@ -9,9 +9,12 @@ export const skillGroups = [
       "Machine Learning",
       "Deep Learning",
       "NLP",
-      "Classification",
-      "Regression",
-      "Forecasting",
+      "Linear Regression",
+      "Random Forest Algorithm",
+      "Feature Engineering",
+      "Statistical Analysis",
+      "Decision Tress",
+      "Forecasting"
     ],
   },
   {
@@ -33,10 +36,10 @@ export const skillGroups = [
   },
   {
     category: "Databases",
-    skills: ["PostgreSQL", "MongoDB", "Weaviate", "Vector Databases"],
+    skills: ["PostgreSQL", "Pinecone", "Weaviate", "FAISS"],
   },
   {
     category: "Tools",
-    skills: ["GitHub", "VS Code", "Cursor", "Power BI", "Streamlit"],
+    skills: ["Git", "GitHub", "VS Code", "Cursor", "Codex", "Power BI", "Streamlit"],
   },
 ];
