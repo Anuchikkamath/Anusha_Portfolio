@@ -1,7 +1,7 @@
 import resumePdf from "../resume/Anusha_Chikkamath_AI_Engineer_resume.pdf";
 
 export const profile = {
-  name: "Anusha Chikkamath",
+  name: "Anusha Basavaraj Chikkamath",
   role: "AI Engineer building LLM-powered applications, RAG systems, and intelligent automation workflows.",
   highlights: [
     "7 Months Industry Experience",
