@@ -78,8 +78,7 @@ export const projects = [
     techStack: [
       "JavaScript/Python",
       "LLMs",
-      "Prompt Engineering",
-      "Markdown",
+      "Prompt Engineering"
     ],
     outcome:
       "Automated README creation and improved project documentation quality.",
