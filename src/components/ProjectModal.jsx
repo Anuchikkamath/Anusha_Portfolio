@@ -53,12 +53,9 @@ export default function ProjectModal({ project, onClose }) {
           <X size={20} />
         </button>
 
-        <span className="inline-flex rounded-full bg-sky-50 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-sky-800">
-          {project.type}
-        </span>
         <h3
           id="project-modal-title"
-          className="mt-4 pr-10 text-2xl font-bold text-ink sm:text-3xl"
+          className="pr-10 text-2xl font-bold text-ink sm:text-3xl"
         >
           {project.title}
         </h3>

@@ -9,7 +9,7 @@ export default function Projects() {
     <section id="projects">
       <div className="section-shell">
         <p className="section-kicker">Projects</p>
-        <h2 className="section-title">Selected case studies</h2>
+        <h2 className="section-title">My Projects</h2>
 
         <div className="mt-10 grid gap-5 md:grid-cols-2">
           {projects.map((project) => (
@@ -19,12 +19,7 @@ export default function Projects() {
               className="card group flex h-full flex-col p-6 text-left transition hover:-translate-y-1 hover:border-ocean/40 hover:shadow-soft"
               onClick={() => setSelectedProject(project)}
             >
-              <div className="flex flex-wrap items-center gap-3">
-                <span className="rounded-full bg-sky-50 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-sky-800">
-                  {project.type}
-                </span>
-              </div>
-              <h3 className="mt-5 text-xl font-bold text-ink">
+              <h3 className="text-xl font-bold text-ink">
                 {project.title}
               </h3>
               <p className="mt-3 flex-1 text-base leading-7 text-ink/70">

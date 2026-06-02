@@ -1,8 +1,9 @@
-import { Menu, X } from "lucide-react";
+import { Download, Menu, X } from "lucide-react";
 import { useState } from "react";
 import { profile } from "../data/profile.js";
 
 const navLinks = [
+  { label: "Resume", href: profile.resumeUrl, download: true },
   { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
   { label: "Skills", href: "#skills" },
@@ -32,8 +33,14 @@ export default function Navbar() {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-ink/75 transition hover:text-ocean"
+              className={
+                link.download
+                  ? "inline-flex items-center gap-1.5 rounded-lg border border-ocean/20 bg-white px-3 py-2 text-sm font-semibold text-ocean transition hover:border-ocean hover:bg-emerald-50"
+                  : "text-sm font-medium text-ink/75 transition hover:text-ocean"
+              }
+              download={link.download}
             >
+              {link.download && <Download size={15} />}
               {link.label}
             </a>
           ))}
@@ -56,9 +63,15 @@ export default function Navbar() {
               <a
                 key={link.href}
                 href={link.href}
-                className="rounded-lg px-3 py-3 text-sm font-medium text-ink/75 transition hover:bg-emerald-50 hover:text-ocean"
+                className={
+                  link.download
+                    ? "inline-flex items-center gap-2 rounded-lg border border-ocean/20 bg-emerald-50 px-3 py-3 text-sm font-semibold text-ocean transition hover:border-ocean"
+                    : "rounded-lg px-3 py-3 text-sm font-medium text-ink/75 transition hover:bg-emerald-50 hover:text-ocean"
+                }
                 onClick={closeMenu}
+                download={link.download}
               >
+                {link.download && <Download size={16} />}
                 {link.label}
               </a>
             ))}

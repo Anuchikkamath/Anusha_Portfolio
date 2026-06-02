@@ -37,13 +37,6 @@ export default function Hero() {
               View Projects
             </a>
             <a
-              href={profile.resumeUrl}
-              className="inline-flex items-center justify-center rounded-lg border border-emerald-900/15 bg-white px-5 py-3 text-sm font-semibold text-ink transition hover:border-ocean hover:text-ocean"
-              download
-            >
-              Download Resume
-            </a>
-            <a
               href="#contact"
               className="inline-flex items-center justify-center rounded-lg border border-emerald-900/15 bg-white px-5 py-3 text-sm font-semibold text-ink transition hover:border-ocean hover:text-ocean"
             >
